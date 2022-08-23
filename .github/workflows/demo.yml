@@ -18,6 +18,7 @@ jobs:
     
   give-a-cat:
         name: free dat
+        runs-on: ubuntu-latest
         steps:  
           - uses: ruairidhwm/action-cats@1.0.1
             with:

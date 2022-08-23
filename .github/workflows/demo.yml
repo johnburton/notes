@@ -15,3 +15,10 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+    
+    give-a-cat:
+        name: free dat
+        steps:  
+          - uses: ruairidhwm/action-cats@1.0.1
+            with:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
